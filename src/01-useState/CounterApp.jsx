@@ -22,13 +22,13 @@ export default function CounterApp() {
 
         <button className="btn" onClick={
             () => {
-                setCounter({...state, counter1: counter2 + 1})
+                setCounter({...state, counter2: counter2 + 1})
             }
         }>+1 counter2</button>
 
         <button className="btn" onClick={
             () => {
-                setCounter({...state, counter1: counter3 + 1})
+                setCounter({...state, counter3: counter3 + 1})
             }
         }>+1 counter3</button>
 
