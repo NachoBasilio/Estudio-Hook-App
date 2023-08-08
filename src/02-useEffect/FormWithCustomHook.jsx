@@ -1,24 +1,18 @@
-import { useState } from "react"
-import Message from "./Message"
+
+import useForm from "../hooks/useForm"
+
 
 
 export default function FormWithCustomHook() {
-    const [formState, setFormState] = useState({
+
+    const initialState = {
         userName: '',
         email: '',
         password: ''
-    })
-    const { userName, email, password } = formState
-
-    const hanglerInputChange = function (e){
-        e.preventDefault()
-        setFormState({
-            ...formState,
-            [e.target.name]: e.target.value
-        })
     }
+    const {hanglerResetForm, hanglerInputChange, userName, email, password} = useForm(initialState)
 
-
+    
 
     return (
         <>
@@ -55,9 +49,8 @@ export default function FormWithCustomHook() {
             onChange={ hanglerInputChange }
             />
 
-            {
-                (userName === 'NachoB') && <Message></Message>
-            }
+            <button className="btn-primary mt-2" onClick={hanglerResetForm}>Reset</button>
+
         </>
     )
 }
