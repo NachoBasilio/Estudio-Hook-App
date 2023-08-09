@@ -9,8 +9,8 @@ export default function CallbackHook() {
     const  [contador, setContador ] = useState(10);
     
     const IncrementarPadre = useCallback(
-        () => {
-            setContador(c => c + 1);
+        (value) => {
+            setContador(c => c + value);
         }, 
         []
     )
