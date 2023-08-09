@@ -6,15 +6,15 @@
 //import FocusScreen from "./04-useRef/FocusScreen";
 //import Memorize from "./06-useMemo/Memorize";
 //import Layout from "./05-useLayoutEffect/Layout";
-import MemoHook from "./06-useMemo/MemoHook"
-
+//import MemoHook from "./06-useMemo/MemoHook"
+import CallbackHook from "./06-useMemo/CallbackHook";
 
 
 
 export default function HookApp() {
   return (
     <div>
-        <MemoHook />
+        <CallbackHook />
     </div>
   )
 }
