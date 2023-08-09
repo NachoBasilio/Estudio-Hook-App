@@ -9,7 +9,7 @@
 //import MemoHook from "./06-useMemo/MemoHook"
 //import CallbackHook from "./06-useMemo/CallbackHook";
 import { Padre } from "./07-tarea-memo/Padre"
-
+import './08-useReducer/intro-reducer'
 
 
 
